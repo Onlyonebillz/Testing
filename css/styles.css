@@ -1,0 +1,13 @@
+/*Al-ameen Idowu-salami*/
+
+body{
+    font: normal normal normal 16px arial,sans-serif;
+    width: 100vw;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    height: 100vw;
+
+}
+h2{
+    font-size: 3.5em;
+    color: #fc9;
+}
