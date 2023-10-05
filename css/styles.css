@@ -3,11 +3,45 @@
 body{
     font: normal normal normal 16px arial,sans-serif;
     width: 100vw;
-    background-color: hsla(205, 76%, 67%, 0.7);
+    background-color: hsla(205, 46%, 49%, 0.7);
     height: 100vw;
 
 }
 h2{
     font-size: 3.5em;
-    color: #fc9;
+    color: rgb(82, 61, 114);
+}
+header{
+    background-color: hsl(213, 38%, 36%);
+}
+main{
+    float: left;
+    width: 65vw;
+    background-color: hsl(152, 40%, 16%);
+}
+aside{
+    float: right;
+    width: 25vw;
+    background-color: hsl(272, 33%, 59%);
+}
+footer{
+    clear: both;
+    background-color: hsl(338, 37%, 58%)
+}
+.structural{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+#para1{
+    color: rgb(149, 119, 144);
+}
+#para2{
+    color: rgb(34, 32, 32);
+}
+a:hover{
+    color: #f09;
+}
+footer p{
+    font-size: .75em;
 }
