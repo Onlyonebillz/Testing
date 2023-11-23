@@ -1,15 +1,18 @@
 /*Al-ameen Idowu-salami*/
-
+html{
+    font: normal normal normal 16px arial,sans-serif;
+}
 body{
     font: normal normal normal 16px arial,sans-serif;
     width: 100vw;
     background-color: hsla(205, 46%, 49%, 0.7);
     height: 100vw;
-
+    display: flex;
+    flex-direction: column;
 }
 h1{
     color: rgb(82, 61, 114);
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 h2{
     font-size: 3.5em;
@@ -17,6 +20,10 @@ h2{
 }
 header{
     background-color: hsl(213, 38%, 36%);
+    flex: 1 10%;
+}
+nav{
+    flex: 1 5%;
 }
 nav ul li{
     display: inline;
@@ -27,21 +34,27 @@ nav ul li a{
     background-color: cornsilk;
     text-decoration: none;
     color: indigo;
-    padding: 4px;
+    padding: 1rem;
 }
 nav ul li a:hover{
     border: 2px solid cornsilk;
     background-color: indigo;
     color: cornsilk;
 }
+section{
+    display: flex;
+    flex-direction: row;
+    flex: 4 8%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
 main{
-    float: left;
-    width: 65vw;
+    flex: 2 1 70%;
     background-color: hsl(209, 41%, 16%);
 }
 aside{
-    float: right;
-    width: 25vw;
+    flex: 1 2 30%;
     background-color: hsl(210, 36%, 55%);
 }
 aside ul{
@@ -53,17 +66,18 @@ aside li a{
 }
 aside a {
     color:  rgba(44, 41, 41, 0.8);
+
 }
 aside a:hover{
     color: #f09;
 }
 footer{
-    clear: both;
+    flex: 1 5%;
     background-color: hsl(338, 37%, 58%)
 }
 .structural{
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
     border: 2px solid black;
 }
 #para1{
@@ -97,7 +111,33 @@ textarea{
     width: 50%;
     display: block;
 }
-
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+figure{
+    border: 2px solid black;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
 footer p{
     font-size: .75em;
+}
+@media (max-width: 1200) {
+    html{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: 10px;
+    }
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
